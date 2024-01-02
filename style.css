@@ -38,7 +38,14 @@ body {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
     font-size: 8vmin;
     background-color: #E1E289; /* #E1E289 #E3F2FD */
+}
+
+.color-of-X {
     color: #DB504A;
+}
+
+.color-of-O {
+    color: #46B1C9;
 }
 
 #reset-btn {

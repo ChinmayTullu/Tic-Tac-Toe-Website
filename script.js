@@ -22,11 +22,13 @@ boxes.forEach((box) => {
         if(turnX===true)
         {
             box.innerText="X";
+            box.classList.add("color-of-X");
             turnX=false;
         }
         else
         {
             box.innerText="O";
+            box.classList.add("color-of-O");
             turnX=true;
         }
         box.disabled=true;
@@ -81,6 +83,9 @@ const resetGame=() => {
     {
         box.disabled=false;
         box.innerText="";
+        box.classList.remove("winner-glow");
+        box.classList.remove("color-of-X");
+        box.classList.remove("color-of-Y");
         msg.classList.add("hide");
         turnX=true;
         turns=0;
