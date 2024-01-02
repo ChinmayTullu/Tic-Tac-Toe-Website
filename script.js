@@ -40,14 +40,17 @@ boxes.forEach((box) => {
 const checkWinner=() => {
     for(let pattern of winPatterns)
     {
-        let pos1=boxes[pattern[0]].innerText;
-        let pos2=boxes[pattern[1]].innerText;
-        let pos3=boxes[pattern[2]].innerText;
-        if(pos1!=="" && pos2!=="" && pos3!=="")
+        let pos1=boxes[pattern[0]];
+        let pos2=boxes[pattern[1]];
+        let pos3=boxes[pattern[2]];
+        if(pos1.innerText!=="" && pos2.innerText!=="" && pos3.innerText!=="")
         {
-            if(pos1==pos2 && pos2==pos3)
+            if(pos1.innerText==pos2.innerText && pos2.innerText==pos3.innerText)
             {    
-                showWinner(pos1);
+                pos1.classList.add("winner-glow");
+                pos2.classList.add("winner-glow");
+                pos3.classList.add("winner-glow");
+                showWinner(pos1.innerText);
                 disableAllBoxes();
                 draw=false;
             }
