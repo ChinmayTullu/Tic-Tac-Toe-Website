@@ -1,11 +1,16 @@
 * {
     margin: 0px;
     padding: 0px;
+    margin-top: 0.1rem;
 }
 
 body {
     background-color: #99AA38; /* #99AA38 #DB5461*/
     text-align: center;
+}
+
+#main-header {
+    font-size: 2.5rem;
 }
 
 .container {
