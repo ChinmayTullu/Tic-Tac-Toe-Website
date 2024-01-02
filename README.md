@@ -1,3 +1,3 @@
 # TicTacToe-Website
-A simple tic tac toe game on website
-Uses HTML CSS and JS 
+A simple tic tac toe game on website 
+Languages Used: HTML CSS and JS 
