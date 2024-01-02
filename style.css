@@ -11,6 +11,7 @@ body {
 
 #main-header {
     font-size: 2.4rem;
+    font-family: "Merienda";
 }
 
 .container {
@@ -45,7 +46,7 @@ body {
 }
 
 .color-of-O {
-    color: #5F39E6; /* #118AB2 #46B1C9 #05299E #5E4AE3*/
+    color: #5F39E6; /* #5F39E6 #118AB2 #46B1C9 */
 }
 
 #reset-btn {
@@ -63,8 +64,9 @@ body {
 
 #outcome {
     /* color: #ACD2ED; */
-    font-size: 5vmin;
+    font-size: 5.2vmin;
     font-weight: bold;
+    font-family: "Dekko";
 }
 
 .hide {
