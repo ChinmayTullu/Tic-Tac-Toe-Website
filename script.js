@@ -62,6 +62,10 @@ const checkWinner=() => {
 
 const showWinner=(winner) => {
     msg.innerText=`Winner : ${winner}`;
+    if(winner==="X")
+        msg.classList.add("color-of-X");
+    else
+        msg.classList.add("color-of-O");
     msg.classList.remove("hide");
 }
 
@@ -83,9 +87,12 @@ const resetGame=() => {
     {
         box.disabled=false;
         box.innerText="";
-        box.classList.remove("winner-glow");
-        box.classList.remove("color-of-X");
-        box.classList.remove("color-of-Y");
+        // box.classList.remove("winner-glow");
+        // box.classList.remove("color-of-X");
+        // box.classList.remove("color-of-O");
+        box.setAttribute("class", "");
+        box.classList.add("box");
+        msg.setAttribute("class", "");
         msg.classList.add("hide");
         turnX=true;
         turns=0;

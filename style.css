@@ -45,7 +45,7 @@ body {
 }
 
 .color-of-O {
-    color: #46B1C9;
+    color: #5F39E6; /* #118AB2 #46B1C9 #05299E #5E4AE3*/
 }
 
 #reset-btn {
@@ -62,8 +62,9 @@ body {
 }
 
 #outcome {
-    color: #ACD2ED;
+    /* color: #ACD2ED; */
     font-size: 5vmin;
+    font-weight: bold;
 }
 
 .hide {
